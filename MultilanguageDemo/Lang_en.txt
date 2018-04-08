@@ -1,6 +1,0 @@
-{
-    "change_en": "Change to English",
-    "change_vi": "Change to Vietnamse",
-    "hello": "Hello",
-    "lang": "Language"
-}

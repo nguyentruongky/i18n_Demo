@@ -1,6 +1,0 @@
-{
-    "change_en": “Dịch sang tiếng Anh“,
-    "change_vi": “Dịch sang tiếng Việt“,
-    "hello": "Xin ch\u00e0o",
-    "lang": "Vi\u1ec7t Nam"
-}
