@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultilanguageDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJo-fz-9eX">
+                                <rect key="frame" x="149.5" y="70" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fK-Lb-LQc">
+                                <rect key="frame" x="168" y="121" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqN-Ky-fXB">
+                                <rect key="frame" x="114" y="174" width="147" height="30"/>
+                                <state key="normal" title="Change to Vietnamse"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvQ-DU-9sc">
+                                <rect key="frame" x="125" y="232" width="125" height="30"/>
+                                <state key="normal" title="Change to English"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9fK-Lb-LQc" firstAttribute="top" secondItem="fJo-fz-9eX" secondAttribute="bottom" constant="30" id="0XT-6A-uWT"/>
+                            <constraint firstItem="GvQ-DU-9sc" firstAttribute="centerX" secondItem="hqN-Ky-fXB" secondAttribute="centerX" id="25V-GW-ncq"/>
+                            <constraint firstItem="hqN-Ky-fXB" firstAttribute="centerX" secondItem="9fK-Lb-LQc" secondAttribute="centerX" id="Bp6-Ah-K4e"/>
+                            <constraint firstItem="fJo-fz-9eX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KEa-U3-4Fx"/>
+                            <constraint firstItem="9fK-Lb-LQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OUV-cu-di7"/>
+                            <constraint firstItem="fJo-fz-9eX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YEg-yp-UFp"/>
+                            <constraint firstItem="hqN-Ky-fXB" firstAttribute="top" secondItem="9fK-Lb-LQc" secondAttribute="bottom" constant="32" id="jbj-Us-02D"/>
+                            <constraint firstItem="GvQ-DU-9sc" firstAttribute="top" secondItem="hqN-Ky-fXB" secondAttribute="bottom" constant="28" id="sJS-Da-qUH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="englishButton" destination="GvQ-DU-9sc" id="D7v-Wz-ldw"/>
+                        <outlet property="helloLabel" destination="9fK-Lb-LQc" id="Asx-1M-ezf"/>
+                        <outlet property="languageLabel" destination="fJo-fz-9eX" id="5fK-bH-AlQ"/>
+                        <outlet property="vietnameseButton" destination="hqN-Ky-fXB" id="omb-fk-uMr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
